@@ -36,14 +36,14 @@ Constraints:
 	-106 <= nums1[i], nums2[i] <= 106
 
  Seen this question in a real interview before?1/6YesNoAccepted4,492,076/9.5MAcceptance Rate47.3%TopicsMid LevelArrayBinary SearchDivide and ConquerCompaniesSimilar QuestionsMedian of a Row Wise Sorted MatrixMediumDiscussion (978)Choose a typeComment💡 Discussion Rules1. Please don't post any solutions in this discussion.2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.Sort by:Bestkevin_125Jan 03, 2023I got this exact question in an interview last week. I almost gave up because I knew I'm unable to come up with the optimal O(log(n+m)) solution. I quickly did a naive median(sorted(nums1 + nums2)) function and briefly mentioned the optimal approach. The interviewers laughed and said they don't even expect people can implement this within 45 min.
-Today I received a call telling me I've passed the interview. What a relief! Read more3.3K44moonlight16Aug 21, 2019Ok, sorry.  I'm trying to bottle up my disgust for the interviewing process in the silicon valley.  But I couldn't help it after looking at the solution for this one...
+Today I received a call telling me I've passed the interview. What a relief! Read more3.3KShow 44 RepliesReplymoonlight16Aug 21, 2019Ok, sorry.  I'm trying to bottle up my disgust for the interviewing process in the silicon valley.  But I couldn't help it after looking at the solution for this one...
 I actually was asked this question in an interview with VMware.  And after reviewing the solution I'm astonished at how/why this question is ever asked.  Isn't it insane to ask this sort of question in a 20-50min interview?  And in the end, does it really tell you anything about the candidate?  Either you get a) a stumped candidate or b) someone who remembers how to solve it because they've seen it before.
-I'm trying to review the overall approach in my head.  I find myself just memorizing the solution.  I'm pretty certain this process isn't just about memorizing the solutions.  But if you've seen the solution, it becomes somewhat familiar.  10 or 20 years down the road and you'll never encounter it in industry and will have forgotten the solution.  So you end up just having to recall how its solved, i.e. "oh yeah, i remember how this one is solved in O(logn) complexity".   I doubt most candidates could solve this in a short 20-50 min interview. Read more1K43honey-grapesApr 27, 2022Hi,
-I am wondering why .sort() is used in most of the solutions when the time complexity requirement is O(log(m+n))? Read more38725QuinnFeb 15, 2020the description says a log(n+m) solution exists, but many of us did a naive median(sorted(nums1 + nums2)) function which worked great even tho it's way worse than log(n+m).
-Test cases should be harder to force us to think harder, or it should be marked easy or medium. Read more59819Rudraksh JadhavOct 26, 2023Interviewer: Can you tell me how can we find the median of two sorted arrays in logarithmic TC?
-Me: (Call disconnected) Read more4926Madhav SarpalSep 21, 2023God save the person getting this question in an interview. Read more2475Alex KylloFeb 04, 2015I submitted two solutions, one with O(m+n) complexity (merge the entire arrays first and then find the median), and one with O(log(m+n)) complexity (divide-and-conquer to find K smallest element of the two arrays and then calculate median) and latter was only 2ms faster. Suggest providing a test case that's sufficiently large to make the difference between logarithmic and linear runtime performance obvious. Read more36612Gurlop Kishore PaniSep 21, 2023After avoiding this question through my whole life, finally, today I will look up its solution. Read more1696SnorlaxJul 25, 2021Rating: 3. This is marked as Hard problem, as you will find that the expected time compelxity is O(ln(m+n)). Therefore, you can't merge the two sorted arrays into one sorted array and find the median. As the merging operation it self takes O(m + n). I give this problem a low rating, for reason that in reality, you barely need to optimize a solution like this, and the expected solution adds too much cognitive load to a problem than can be addressed pretty easily with a little sacrifice on space.
+I'm trying to review the overall approach in my head.  I find myself just memorizing the solution.  I'm pretty certain this process isn't just about memorizing the solutions.  But if you've seen the solution, it becomes somewhat familiar.  10 or 20 years down the road and you'll never encounter it in industry and will have forgotten the solution.  So you end up just having to recall how its solved, i.e. "oh yeah, i remember how this one is solved in O(logn) complexity".   I doubt most candidates could solve this in a short 20-50 min interview. Read more1KShow 43 RepliesReplyhoney-grapesApr 27, 2022Hi,
+I am wondering why .sort() is used in most of the solutions when the time complexity requirement is O(log(m+n))? Read more387Show 25 RepliesReplyQuinnFeb 15, 2020the description says a log(n+m) solution exists, but many of us did a naive median(sorted(nums1 + nums2)) function which worked great even tho it's way worse than log(n+m).
+Test cases should be harder to force us to think harder, or it should be marked easy or medium. Read more598Show 19 RepliesReplyRudraksh JadhavOct 26, 2023Interviewer: Can you tell me how can we find the median of two sorted arrays in logarithmic TC?
+Me: (Call disconnected) Read more492Show 6 RepliesReplyMadhav SarpalSep 21, 2023God save the person getting this question in an interview. Read more247Show 5 RepliesReplyAlex KylloFeb 04, 2015I submitted two solutions, one with O(m+n) complexity (merge the entire arrays first and then find the median), and one with O(log(m+n)) complexity (divide-and-conquer to find K smallest element of the two arrays and then calculate median) and latter was only 2ms faster. Suggest providing a test case that's sufficiently large to make the difference between logarithmic and linear runtime performance obvious. Read more366Show 12 RepliesReplyGurlop Kishore PaniSep 21, 2023After avoiding this question through my whole life, finally, today I will look up its solution. Read more169Show 6 RepliesReplySnorlaxJul 25, 2021Rating: 3. This is marked as Hard problem, as you will find that the expected time compelxity is O(ln(m+n)). Therefore, you can't merge the two sorted arrays into one sorted array and find the median. As the merging operation it self takes O(m + n). I give this problem a low rating, for reason that in reality, you barely need to optimize a solution like this, and the expected solution adds too much cognitive load to a problem than can be addressed pretty easily with a little sacrifice on space.
 What can you learn from solving this problem? Nothing.
-This should not be used for interview. Read more27412dpintoJan 18, 2019The problem statement in the description states that we can assume there are no empty arrays but the test case inputs includes few examples with empty arrays. Read more783123499Copyright © 2026 LeetCode. All rights reserved.32.5K978542 OnlineMedian of Two Sorted ArraysMedian of Two Sorted ArraysLeetCode1367825Apr 22, 2024EditorialPremium VideoVideo Solution
+This should not be used for interview. Read more274Show 12 RepliesReplydpintoJan 18, 2019The problem statement in the description states that we can assume there are no empty arrays but the test case inputs includes few examples with empty arrays. Read more78Show 3 RepliesReply12345699Copyright © 2026 LeetCode. All rights reserved.32.5K978545 OnlineMedian of Two Sorted ArraysMedian of Two Sorted ArraysLeetCode1367825Apr 22, 2024EditorialPremium VideoVideo Solution
 
  Subscribe to unlockThanks for using LeetCode! To view this solution video you must subscribe to premium.Subscribe
 Solution
@@ -338,9 +338,188 @@ The algorithm only requires a constant amount of additional space to store and u
 
  Comments (252)Sort by:BestComment💡 Article Commenting Rules1. This comment section is for questions and comments regarding this LeetCode article. All posts must respect our LeetCode Community Rules.2. Concerns about errors or bugs in the article, problem description, or test cases should be posted on LeetCode Feedback, so that our team can address them.Gin IchimaruJun 15, 2023This is simply put... torture. Read more1.2K8William ChenJun 21, 2023This problem hurts my soul... Read more6683manofleetJul 02, 2023I hate this problem so much it is unreal Read more338yeezy_sznJul 10, 2023bro why. i can't believe this is one of the top 20 questions asked by companies.. Read more40710DavitJun 18, 2023When I thought I'd finally be able to do one of this hard (but actually hard) problems because I came up with using binary search, I started hitting hundreds of roablocks and had to quit after 1h+ of trying...
 Then I read the solution and learnt there's a whole world of things you gotta find out to make it work, and my soul was crushed again by LeetCode :( Read more1613goolkinJul 21, 2023Understanding the problem is easy, but implementation makes you wanna die. Read more1521touchstoneAug 03, 2023WTF am i putting myself through, if i saw this problem in my interview, i'll happily leave haha Read more1994Jeetaksh GandhiJun 13, 2023This is probably the longest Editorial, which also shows the importance of this problem. Read more1603Sneh BansalJun 11, 2023Oh God why!! 🤕 Read more751gtsohardJun 10, 2023is the comment wrong?? it shows we remove the larger right half, but we are actually removing the smaller left half lol.
-# If k is in the right half of A + B, remove the larger right half.             if a_index + b_index < k:                 if a_value > b_value:                     return solve(k, a_start, a_end, b_index + 1, b_end)                 else:                     return solve(k, a_index + 1, a_end, b_start, b_end) Read more314123426583252Python3Auto24252627282930313233                else:                    return float(max(maxLeftX, maxLeftY))            elif maxLeftX > minRightY:                # We are too far right in partitionX, move left                high = partitionX - 1            else:                # We are too far left in partitionX, move right                low = partitionX + 1                        raise ValueError("Input arrays are not sorted.")SavedLn 33, Col 57AcceptedRuntime: 0 msCase 1Case 2Inputnums1 =[1,3]nums2 =[2]Output2.00000Expected2.00000Contribute a testcaseInput91234›[1,3][2][1,2][3,4]Output912›2.000002.50000Expected912›2.000002.50000 All SubmissionsAccepted2099 / 2099 testcases passedArokiya Nithish Jsubmitted at Aug 06, 2026 16:32AnalysisSolution👑 Unlock the Full LeetCode ExperienceCompany problems, Ask Leet, and expert editorials — all in one plan.Runtime0msBeats100.00%Memory19.54MBBeats41.82%Created with Highcharts 11.1.01ms2ms3ms4ms5ms6ms7ms0%20%40%60%
+# If k is in the right half of A + B, remove the larger right half.             if a_index + b_index < k:                 if a_value > b_value:                     return solve(k, a_start, a_end, b_index + 1, b_end)                 else:                     return solve(k, a_index + 1, a_end, b_start, b_end) Read more314123426583252
+@property --beam-angle-_r_4q_ {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+@property --beam-opacity-_r_4q_ {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: true;
+}
+
+[data-beam="_r_4q_"] {
+  position: relative;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+[data-beam="_r_4q_"][data-active] {
+  animation:
+    beam-spin-_r_4q_ 1.96s linear infinite,
+    beam-fade-in-_r_4q_ 0.6s ease forwards;
+}
+
+[data-beam="_r_4q_"][data-fading] {
+  animation:
+    beam-spin-_r_4q_ 1.96s linear infinite,
+    beam-fade-out-_r_4q_ 0.5s ease forwards;
+}
+
+[data-beam="_r_4q_"][data-active]::after,
+[data-beam="_r_4q_"][data-fading]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9998px;
+  padding: 1px;
+  clip-path: inset(0 round 9999px);
+  background: conic-gradient(
+        from var(--beam-angle-_r_4q_),
+        transparent 0%, transparent 54%,
+        rgba(255, 255, 255, 0.1) 57%,
+        rgba(255, 255, 255, 0.3) 60%,
+        rgba(255, 255, 255, 0.6) 63%,
+        rgba(255, 255, 255, 0.75) 66%,
+        rgba(255, 255, 255, 0.6) 69%,
+        rgba(255, 255, 255, 0.3) 72%,
+        rgba(255, 255, 255, 0.1) 75%,
+        transparent 78%, transparent 100%
+      ),radial-gradient(ellipse 9px 18px at 2% 68%, rgb(60, 140, 200), transparent),
+    radial-gradient(ellipse 4px 8px at 2% 68%, rgb(50, 120, 180), transparent),
+    radial-gradient(ellipse 59px 9px at 72% -3%, rgb(100, 80, 220), transparent),
+    radial-gradient(ellipse 42px 7px at 74% 100%, rgb(80, 100, 255), transparent),
+    radial-gradient(ellipse 10px 17px at 100% 27%, rgb(120, 70, 240), transparent),
+    radial-gradient(ellipse 10px 18px at 100% 27%, rgb(90, 80, 220), transparent),
+    radial-gradient(ellipse 5px 10px at 100% 27%, rgb(70, 110, 255), transparent),
+    radial-gradient(ellipse 11px 12px at 100% 27%, rgb(110, 90, 230), transparent);
+  -webkit-mask:
+    conic-gradient(
+      from var(--beam-angle-_r_4q_),
+      transparent 0%, transparent 30%,
+      rgba(255, 255, 255, 0.1) 36%, rgba(255, 255, 255, 0.35) 44%,
+      white 52%, white 80%,
+      rgba(255, 255, 255, 0.35) 86%, rgba(255, 255, 255, 0.1) 92%,
+      transparent 95%, transparent 100%
+    ),
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: source-in, xor;
+  mask:
+    conic-gradient(
+      from var(--beam-angle-_r_4q_),
+      transparent 0%, transparent 30%,
+      rgba(255, 255, 255, 0.1) 36%, rgba(255, 255, 255, 0.35) 44%,
+      white 52%, white 80%,
+      rgba(255, 255, 255, 0.35) 86%, rgba(255, 255, 255, 0.1) 92%,
+      transparent 95%, transparent 100%
+    ),
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: intersect, exclude;
+  pointer-events: none;
+  z-index: 2;
+  opacity: calc(var(--beam-opacity-_r_4q_) * 0.48 * var(--beam-strength, 1));
+  
+}
+
+[data-beam="_r_4q_"][data-active]::before,
+[data-beam="_r_4q_"][data-fading]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  clip-path: inset(0 round 9999px);
+  background: radial-gradient(ellipse 9px 18px at 2% 68%, rgba(60, 140, 200, 0.5), transparent),
+    radial-gradient(ellipse 4px 8px at 2% 68%, rgba(50, 120, 180, 0.45), transparent),
+    radial-gradient(ellipse 59px 9px at 72% -3%, rgba(100, 80, 220, 0.35), transparent),
+    radial-gradient(ellipse 42px 7px at 74% 100%, rgba(80, 100, 255, 0.35), transparent),
+    radial-gradient(ellipse 10px 17px at 100% 27%, rgba(120, 70, 240, 0.3), transparent),
+    radial-gradient(ellipse 10px 18px at 100% 27%, rgba(90, 80, 220, 0.4), transparent),
+    radial-gradient(ellipse 5px 10px at 100% 27%, rgba(70, 110, 255, 0.3), transparent),
+    radial-gradient(ellipse 11px 12px at 100% 27%, rgba(110, 90, 230, 0.3), transparent);
+  box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, 0.3);
+  -webkit-mask-image: conic-gradient(
+    from var(--beam-angle-_r_4q_),
+    transparent 0%, transparent 22%,
+    rgba(255, 255, 255, 0.12) 28%, rgba(255, 255, 255, 0.4) 36%,
+    white 46%, white 82%,
+    rgba(255, 255, 255, 0.4) 88%, rgba(255, 255, 255, 0.12) 94%,
+    transparent 97%, transparent 100%
+  );
+  -webkit-mask-composite: source-over;
+  mask-image: conic-gradient(
+    from var(--beam-angle-_r_4q_),
+    transparent 0%, transparent 22%,
+    rgba(255, 255, 255, 0.12) 28%, rgba(255, 255, 255, 0.4) 36%,
+    white 46%, white 82%,
+    rgba(255, 255, 255, 0.4) 88%, rgba(255, 255, 255, 0.12) 94%,
+    transparent 97%, transparent 100%
+  );
+  mask-composite: add;
+  pointer-events: none;
+  z-index: 1;
+  opacity: calc(var(--beam-opacity-_r_4q_) * 0.70 * var(--beam-strength, 1));
+  
+}
+
+[data-beam="_r_4q_"] [data-beam-bloom] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  border-radius: 9998px;
+  clip-path: inset(0 round 9999px);
+  background: conic-gradient(
+        from var(--beam-angle-_r_4q_),
+        transparent 0%, transparent 58%,
+        rgba(255, 255, 255, 0.03) 62%,
+        rgba(255, 255, 255, 0.08) 65%,
+        rgba(255, 255, 255, 0.2) 67%,
+        rgba(255, 255, 255, 0.45) 69%,
+        rgba(255, 255, 255, 0.85) 70%,
+        rgba(255, 255, 255, 0.85) 70.5%,
+        rgba(255, 255, 255, 0.45) 71.5%,
+        rgba(255, 255, 255, 0.2) 73%,
+        rgba(255, 255, 255, 0.08) 75%,
+        rgba(255, 255, 255, 0.03) 78%,
+        transparent 82%
+      );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  padding: 1px;
+  filter: blur(8px) brightness(1.30) saturate(1.20);
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+}
+
+[data-beam="_r_4q_"][data-active] [data-beam-bloom],
+[data-beam="_r_4q_"][data-fading] [data-beam-bloom] {
+  display: block;
+  opacity: calc(var(--beam-opacity-_r_4q_) * 0.80 * var(--beam-strength, 1));
+}
+
+@keyframes beam-spin-_r_4q_ {
+  to { --beam-angle-_r_4q_: 360deg; }
+}
+
+@keyframes beam-fade-in-_r_4q_ {
+  to { --beam-opacity-_r_4q_: 1; }
+}
+
+@keyframes beam-fade-out-_r_4q_ {
+  from { --beam-opacity-_r_4q_: 1; }
+  to { --beam-opacity-_r_4q_: 0; }
+}
+
+LeetSort byAllMy SolutionPython3JavaC++PythonJavaScriptCC#TypeScriptGoRustPHPSwiftKotlinDartRubyScalaElixirRacketErlangPython MLHTMLBashPandasArrayBinary SearchDivide and ConquerBinary TreeSortingMerge SortTwo PointersMathHeap (Priority Queue)IteratorRecursionBinary Search TreeProbability and StatisticsDynamic ProgrammingBrainteaserOrdered SetLinked ListBit ManipulationQueueStackGreedySimulationHash TableCountingData StreamSliding WindowShortest PathDepth-First SearchQuickselectSuffix ArrayStringCombinatoricsDesignBinary Indexed TreeMatrixString MatchingBrute-Force SearchStrongly Connected ComponentTrieMemoizationInteractiveCounting SortUnion-FindHash FunctionTopological SortBacktrackingNumber TheoryTreeBubble SortYour last submission beat 100% of other submissions' runtime.Share my solutionLeetCode・ Open・Apr 22, 2024Median of Two Sorted ArraysEditorial5831.3M252Sidhant Singh・ Open・Sep 21, 2023✅99%🔥||✅Journey From Brute Force to Most 🔥Optimized ✅Three Approaches||🔥Easy to understandTwo PointersBinary SearchSortingC++2+6K467.1K102niits・ Open・May 07, 2025【Video】Divide each array into two groupsArrayBinary SearchDivide and ConquerC++3+2.2K105.6K8vaishnavi_k15・ Open・18 hours agoEASY SOLUTION 100% BEATS!!!!!!!!!ArrayBinary SearchC++1130coding_simp・ Open・Oct 02, 2022C++ || SOLUTIONArrayCBinary TreeC++791149K35stellari・ Open・Jun 22, 2015Very concise O(log(min(M,N))) iterative solution with detailed explanationBinary Tree2K444.9K218Deep Saini・ Open・Aug 05, 2026Optimal O(log(min(m, n))) Binary Search ApproachC++1700hungry_bits・ Open・Aug 04, 2026⭐⭐[ 100% Beats ] Runtime | Two Pointers +  Binary Search | C++ | Java | Python3 | Easy Explanation Binary SearchDivide and ConquerC++Java1+11750Sounak Ghosh・ Open・Aug 02, 2026Partition-Based Binary Search Approach in C++ArrayBinary SearchDivide and ConquerC++21150Loginov Kirill・ Open・Apr 21, 2025Merging Sorted Arrays for Median – The Cleanest Shortcut You'll SeeArrayBinary SearchDivide and ConquerPython1+15425.9K7Gourab・ Open・Mar 11, 2023✅ best JAVA solution 😎 | beats 100%Java35992.5K34Ayush Bansal・ Open・Jul 17, 2024Easy and Simple C++ approach | Binary search✅ArrayBinary SearchC++19425.1K2vanAmsen・ Open・Sep 21, 2023✅ 94.96% Binary Search & Two PointersTwo PointersBinary SearchPHPC++6+16757.9K15clue・ Open・Jan 08, 2015Intuitive Python O(log (m+n)) solution, by kth smallest in the two sorted arrays, 252msPython676162.9K59Cheng_Zhang・ Open・Nov 02, 2015Concise JAVA solution based on Binary Search544180.1K71Python3Auto24252627282930313233                else:                    return float(max(maxLeftX, maxLeftY))            elif maxLeftX > minRightY:                # We are too far right in partitionX, move left                high = partitionX - 1            else:                # We are too far left in partitionX, move right                low = partitionX + 1                        raise ValueError("Input arrays are not sorted.")SavedLn 33, Col 57AcceptedRuntime: 0 msCase 1Case 2Inputnums1 =[1,3]nums2 =[2]Output2.00000Expected2.00000Contribute a testcaseInput91234›[1,3][2][1,2][3,4]Output912›2.000002.50000Expected912›2.000002.50000 All SubmissionsAccepted2099 / 2099 testcases passedArokiya Nithish Jsubmitted at Aug 06, 2026 16:32AnalysisSolution👑 Unlock the Full LeetCode ExperienceCompany problems, Ask Leet, and expert editorials — all in one plan.Runtime0msBeats100.00%Memory19.54MBBeats41.82%Created with Highcharts 11.1.018.6mb18.8mb19mb19.2mb19.4mb19.6mb0%20%40%
                   
-                Created with Highcharts 11.1.01ms2ms3ms4ms5ms6ms7msCodePython31class Solution:
+                Created with Highcharts 11.1.018.6mb18.8mb19mb19.2mb19.4mb19.6mbCodePython31class Solution:
 2    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
 3        # Ensure nums1 is the smaller array to minimize binary search range
 4        if len(nums1) > len(nums2):
@@ -404,14 +583,14 @@ Constraints:
 	-106 <= nums1[i], nums2[i] <= 106
 
  Seen this question in a real interview before?1/6YesNoAccepted4,492,076/9.5MAcceptance Rate47.3%TopicsMid LevelArrayBinary SearchDivide and ConquerCompaniesSimilar QuestionsMedian of a Row Wise Sorted MatrixMediumDiscussion (978)Choose a typeComment💡 Discussion Rules1. Please don't post any solutions in this discussion.2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.Sort by:Bestkevin_125Jan 03, 2023I got this exact question in an interview last week. I almost gave up because I knew I'm unable to come up with the optimal O(log(n+m)) solution. I quickly did a naive median(sorted(nums1 + nums2)) function and briefly mentioned the optimal approach. The interviewers laughed and said they don't even expect people can implement this within 45 min.
-Today I received a call telling me I've passed the interview. What a relief! Read more3.3K44moonlight16Aug 21, 2019Ok, sorry.  I'm trying to bottle up my disgust for the interviewing process in the silicon valley.  But I couldn't help it after looking at the solution for this one...
+Today I received a call telling me I've passed the interview. What a relief! Read more3.3KShow 44 RepliesReplymoonlight16Aug 21, 2019Ok, sorry.  I'm trying to bottle up my disgust for the interviewing process in the silicon valley.  But I couldn't help it after looking at the solution for this one...
 I actually was asked this question in an interview with VMware.  And after reviewing the solution I'm astonished at how/why this question is ever asked.  Isn't it insane to ask this sort of question in a 20-50min interview?  And in the end, does it really tell you anything about the candidate?  Either you get a) a stumped candidate or b) someone who remembers how to solve it because they've seen it before.
-I'm trying to review the overall approach in my head.  I find myself just memorizing the solution.  I'm pretty certain this process isn't just about memorizing the solutions.  But if you've seen the solution, it becomes somewhat familiar.  10 or 20 years down the road and you'll never encounter it in industry and will have forgotten the solution.  So you end up just having to recall how its solved, i.e. "oh yeah, i remember how this one is solved in O(logn) complexity".   I doubt most candidates could solve this in a short 20-50 min interview. Read more1K43honey-grapesApr 27, 2022Hi,
-I am wondering why .sort() is used in most of the solutions when the time complexity requirement is O(log(m+n))? Read more38725QuinnFeb 15, 2020the description says a log(n+m) solution exists, but many of us did a naive median(sorted(nums1 + nums2)) function which worked great even tho it's way worse than log(n+m).
-Test cases should be harder to force us to think harder, or it should be marked easy or medium. Read more59819Rudraksh JadhavOct 26, 2023Interviewer: Can you tell me how can we find the median of two sorted arrays in logarithmic TC?
-Me: (Call disconnected) Read more4926Madhav SarpalSep 21, 2023God save the person getting this question in an interview. Read more2475Alex KylloFeb 04, 2015I submitted two solutions, one with O(m+n) complexity (merge the entire arrays first and then find the median), and one with O(log(m+n)) complexity (divide-and-conquer to find K smallest element of the two arrays and then calculate median) and latter was only 2ms faster. Suggest providing a test case that's sufficiently large to make the difference between logarithmic and linear runtime performance obvious. Read more36612Gurlop Kishore PaniSep 21, 2023After avoiding this question through my whole life, finally, today I will look up its solution. Read more1696SnorlaxJul 25, 2021Rating: 3. This is marked as Hard problem, as you will find that the expected time compelxity is O(ln(m+n)). Therefore, you can't merge the two sorted arrays into one sorted array and find the median. As the merging operation it self takes O(m + n). I give this problem a low rating, for reason that in reality, you barely need to optimize a solution like this, and the expected solution adds too much cognitive load to a problem than can be addressed pretty easily with a little sacrifice on space.
+I'm trying to review the overall approach in my head.  I find myself just memorizing the solution.  I'm pretty certain this process isn't just about memorizing the solutions.  But if you've seen the solution, it becomes somewhat familiar.  10 or 20 years down the road and you'll never encounter it in industry and will have forgotten the solution.  So you end up just having to recall how its solved, i.e. "oh yeah, i remember how this one is solved in O(logn) complexity".   I doubt most candidates could solve this in a short 20-50 min interview. Read more1KShow 43 RepliesReplyhoney-grapesApr 27, 2022Hi,
+I am wondering why .sort() is used in most of the solutions when the time complexity requirement is O(log(m+n))? Read more387Show 25 RepliesReplyQuinnFeb 15, 2020the description says a log(n+m) solution exists, but many of us did a naive median(sorted(nums1 + nums2)) function which worked great even tho it's way worse than log(n+m).
+Test cases should be harder to force us to think harder, or it should be marked easy or medium. Read more598Show 19 RepliesReplyRudraksh JadhavOct 26, 2023Interviewer: Can you tell me how can we find the median of two sorted arrays in logarithmic TC?
+Me: (Call disconnected) Read more492Show 6 RepliesReplyMadhav SarpalSep 21, 2023God save the person getting this question in an interview. Read more247Show 5 RepliesReplyAlex KylloFeb 04, 2015I submitted two solutions, one with O(m+n) complexity (merge the entire arrays first and then find the median), and one with O(log(m+n)) complexity (divide-and-conquer to find K smallest element of the two arrays and then calculate median) and latter was only 2ms faster. Suggest providing a test case that's sufficiently large to make the difference between logarithmic and linear runtime performance obvious. Read more366Show 12 RepliesReplyGurlop Kishore PaniSep 21, 2023After avoiding this question through my whole life, finally, today I will look up its solution. Read more169Show 6 RepliesReplySnorlaxJul 25, 2021Rating: 3. This is marked as Hard problem, as you will find that the expected time compelxity is O(ln(m+n)). Therefore, you can't merge the two sorted arrays into one sorted array and find the median. As the merging operation it self takes O(m + n). I give this problem a low rating, for reason that in reality, you barely need to optimize a solution like this, and the expected solution adds too much cognitive load to a problem than can be addressed pretty easily with a little sacrifice on space.
 What can you learn from solving this problem? Nothing.
-This should not be used for interview. Read more27412dpintoJan 18, 2019The problem statement in the description states that we can assume there are no empty arrays but the test case inputs includes few examples with empty arrays. Read more783123499Copyright © 2026 LeetCode. All rights reserved.32.5K978542 OnlineMedian of Two Sorted ArraysMedian of Two Sorted ArraysLeetCode1367825Apr 22, 2024EditorialPremium VideoVideo Solution
+This should not be used for interview. Read more274Show 12 RepliesReplydpintoJan 18, 2019The problem statement in the description states that we can assume there are no empty arrays but the test case inputs includes few examples with empty arrays. Read more78Show 3 RepliesReply12345699Copyright © 2026 LeetCode. All rights reserved.32.5K978545 OnlineMedian of Two Sorted ArraysMedian of Two Sorted ArraysLeetCode1367825Apr 22, 2024EditorialPremium VideoVideo Solution
 
  Subscribe to unlockThanks for using LeetCode! To view this solution video you must subscribe to premium.Subscribe
 Solution
@@ -706,9 +885,188 @@ The algorithm only requires a constant amount of additional space to store and u
 
  Comments (252)Sort by:BestComment💡 Article Commenting Rules1. This comment section is for questions and comments regarding this LeetCode article. All posts must respect our LeetCode Community Rules.2. Concerns about errors or bugs in the article, problem description, or test cases should be posted on LeetCode Feedback, so that our team can address them.Gin IchimaruJun 15, 2023This is simply put... torture. Read more1.2K8William ChenJun 21, 2023This problem hurts my soul... Read more6683manofleetJul 02, 2023I hate this problem so much it is unreal Read more338yeezy_sznJul 10, 2023bro why. i can't believe this is one of the top 20 questions asked by companies.. Read more40710DavitJun 18, 2023When I thought I'd finally be able to do one of this hard (but actually hard) problems because I came up with using binary search, I started hitting hundreds of roablocks and had to quit after 1h+ of trying...
 Then I read the solution and learnt there's a whole world of things you gotta find out to make it work, and my soul was crushed again by LeetCode :( Read more1613goolkinJul 21, 2023Understanding the problem is easy, but implementation makes you wanna die. Read more1521touchstoneAug 03, 2023WTF am i putting myself through, if i saw this problem in my interview, i'll happily leave haha Read more1994Jeetaksh GandhiJun 13, 2023This is probably the longest Editorial, which also shows the importance of this problem. Read more1603Sneh BansalJun 11, 2023Oh God why!! 🤕 Read more751gtsohardJun 10, 2023is the comment wrong?? it shows we remove the larger right half, but we are actually removing the smaller left half lol.
-# If k is in the right half of A + B, remove the larger right half.             if a_index + b_index < k:                 if a_value > b_value:                     return solve(k, a_start, a_end, b_index + 1, b_end)                 else:                     return solve(k, a_index + 1, a_end, b_start, b_end) Read more314123426583252Python3Auto24252627282930313233                else:                    return float(max(maxLeftX, maxLeftY))            elif maxLeftX > minRightY:                # We are too far right in partitionX, move left                high = partitionX - 1            else:                # We are too far left in partitionX, move right                low = partitionX + 1                        raise ValueError("Input arrays are not sorted.")SavedLn 33, Col 57AcceptedRuntime: 0 msCase 1Case 2Inputnums1 =[1,3]nums2 =[2]Output2.00000Expected2.00000Contribute a testcaseInput91234›[1,3][2][1,2][3,4]Output912›2.000002.50000Expected912›2.000002.50000 All SubmissionsAccepted2099 / 2099 testcases passedArokiya Nithish Jsubmitted at Aug 06, 2026 16:32AnalysisSolution👑 Unlock the Full LeetCode ExperienceCompany problems, Ask Leet, and expert editorials — all in one plan.Runtime0msBeats100.00%Memory19.54MBBeats41.82%Created with Highcharts 11.1.01ms2ms3ms4ms5ms6ms7ms0%20%40%60%
+# If k is in the right half of A + B, remove the larger right half.             if a_index + b_index < k:                 if a_value > b_value:                     return solve(k, a_start, a_end, b_index + 1, b_end)                 else:                     return solve(k, a_index + 1, a_end, b_start, b_end) Read more314123426583252
+@property --beam-angle-_r_4q_ {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+@property --beam-opacity-_r_4q_ {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: true;
+}
+
+[data-beam="_r_4q_"] {
+  position: relative;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+[data-beam="_r_4q_"][data-active] {
+  animation:
+    beam-spin-_r_4q_ 1.96s linear infinite,
+    beam-fade-in-_r_4q_ 0.6s ease forwards;
+}
+
+[data-beam="_r_4q_"][data-fading] {
+  animation:
+    beam-spin-_r_4q_ 1.96s linear infinite,
+    beam-fade-out-_r_4q_ 0.5s ease forwards;
+}
+
+[data-beam="_r_4q_"][data-active]::after,
+[data-beam="_r_4q_"][data-fading]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9998px;
+  padding: 1px;
+  clip-path: inset(0 round 9999px);
+  background: conic-gradient(
+        from var(--beam-angle-_r_4q_),
+        transparent 0%, transparent 54%,
+        rgba(255, 255, 255, 0.1) 57%,
+        rgba(255, 255, 255, 0.3) 60%,
+        rgba(255, 255, 255, 0.6) 63%,
+        rgba(255, 255, 255, 0.75) 66%,
+        rgba(255, 255, 255, 0.6) 69%,
+        rgba(255, 255, 255, 0.3) 72%,
+        rgba(255, 255, 255, 0.1) 75%,
+        transparent 78%, transparent 100%
+      ),radial-gradient(ellipse 9px 18px at 2% 68%, rgb(60, 140, 200), transparent),
+    radial-gradient(ellipse 4px 8px at 2% 68%, rgb(50, 120, 180), transparent),
+    radial-gradient(ellipse 59px 9px at 72% -3%, rgb(100, 80, 220), transparent),
+    radial-gradient(ellipse 42px 7px at 74% 100%, rgb(80, 100, 255), transparent),
+    radial-gradient(ellipse 10px 17px at 100% 27%, rgb(120, 70, 240), transparent),
+    radial-gradient(ellipse 10px 18px at 100% 27%, rgb(90, 80, 220), transparent),
+    radial-gradient(ellipse 5px 10px at 100% 27%, rgb(70, 110, 255), transparent),
+    radial-gradient(ellipse 11px 12px at 100% 27%, rgb(110, 90, 230), transparent);
+  -webkit-mask:
+    conic-gradient(
+      from var(--beam-angle-_r_4q_),
+      transparent 0%, transparent 30%,
+      rgba(255, 255, 255, 0.1) 36%, rgba(255, 255, 255, 0.35) 44%,
+      white 52%, white 80%,
+      rgba(255, 255, 255, 0.35) 86%, rgba(255, 255, 255, 0.1) 92%,
+      transparent 95%, transparent 100%
+    ),
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: source-in, xor;
+  mask:
+    conic-gradient(
+      from var(--beam-angle-_r_4q_),
+      transparent 0%, transparent 30%,
+      rgba(255, 255, 255, 0.1) 36%, rgba(255, 255, 255, 0.35) 44%,
+      white 52%, white 80%,
+      rgba(255, 255, 255, 0.35) 86%, rgba(255, 255, 255, 0.1) 92%,
+      transparent 95%, transparent 100%
+    ),
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: intersect, exclude;
+  pointer-events: none;
+  z-index: 2;
+  opacity: calc(var(--beam-opacity-_r_4q_) * 0.48 * var(--beam-strength, 1));
+  
+}
+
+[data-beam="_r_4q_"][data-active]::before,
+[data-beam="_r_4q_"][data-fading]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  clip-path: inset(0 round 9999px);
+  background: radial-gradient(ellipse 9px 18px at 2% 68%, rgba(60, 140, 200, 0.5), transparent),
+    radial-gradient(ellipse 4px 8px at 2% 68%, rgba(50, 120, 180, 0.45), transparent),
+    radial-gradient(ellipse 59px 9px at 72% -3%, rgba(100, 80, 220, 0.35), transparent),
+    radial-gradient(ellipse 42px 7px at 74% 100%, rgba(80, 100, 255, 0.35), transparent),
+    radial-gradient(ellipse 10px 17px at 100% 27%, rgba(120, 70, 240, 0.3), transparent),
+    radial-gradient(ellipse 10px 18px at 100% 27%, rgba(90, 80, 220, 0.4), transparent),
+    radial-gradient(ellipse 5px 10px at 100% 27%, rgba(70, 110, 255, 0.3), transparent),
+    radial-gradient(ellipse 11px 12px at 100% 27%, rgba(110, 90, 230, 0.3), transparent);
+  box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, 0.3);
+  -webkit-mask-image: conic-gradient(
+    from var(--beam-angle-_r_4q_),
+    transparent 0%, transparent 22%,
+    rgba(255, 255, 255, 0.12) 28%, rgba(255, 255, 255, 0.4) 36%,
+    white 46%, white 82%,
+    rgba(255, 255, 255, 0.4) 88%, rgba(255, 255, 255, 0.12) 94%,
+    transparent 97%, transparent 100%
+  );
+  -webkit-mask-composite: source-over;
+  mask-image: conic-gradient(
+    from var(--beam-angle-_r_4q_),
+    transparent 0%, transparent 22%,
+    rgba(255, 255, 255, 0.12) 28%, rgba(255, 255, 255, 0.4) 36%,
+    white 46%, white 82%,
+    rgba(255, 255, 255, 0.4) 88%, rgba(255, 255, 255, 0.12) 94%,
+    transparent 97%, transparent 100%
+  );
+  mask-composite: add;
+  pointer-events: none;
+  z-index: 1;
+  opacity: calc(var(--beam-opacity-_r_4q_) * 0.70 * var(--beam-strength, 1));
+  
+}
+
+[data-beam="_r_4q_"] [data-beam-bloom] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  border-radius: 9998px;
+  clip-path: inset(0 round 9999px);
+  background: conic-gradient(
+        from var(--beam-angle-_r_4q_),
+        transparent 0%, transparent 58%,
+        rgba(255, 255, 255, 0.03) 62%,
+        rgba(255, 255, 255, 0.08) 65%,
+        rgba(255, 255, 255, 0.2) 67%,
+        rgba(255, 255, 255, 0.45) 69%,
+        rgba(255, 255, 255, 0.85) 70%,
+        rgba(255, 255, 255, 0.85) 70.5%,
+        rgba(255, 255, 255, 0.45) 71.5%,
+        rgba(255, 255, 255, 0.2) 73%,
+        rgba(255, 255, 255, 0.08) 75%,
+        rgba(255, 255, 255, 0.03) 78%,
+        transparent 82%
+      );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  padding: 1px;
+  filter: blur(8px) brightness(1.30) saturate(1.20);
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+}
+
+[data-beam="_r_4q_"][data-active] [data-beam-bloom],
+[data-beam="_r_4q_"][data-fading] [data-beam-bloom] {
+  display: block;
+  opacity: calc(var(--beam-opacity-_r_4q_) * 0.80 * var(--beam-strength, 1));
+}
+
+@keyframes beam-spin-_r_4q_ {
+  to { --beam-angle-_r_4q_: 360deg; }
+}
+
+@keyframes beam-fade-in-_r_4q_ {
+  to { --beam-opacity-_r_4q_: 1; }
+}
+
+@keyframes beam-fade-out-_r_4q_ {
+  from { --beam-opacity-_r_4q_: 1; }
+  to { --beam-opacity-_r_4q_: 0; }
+}
+
+LeetSort byAllMy SolutionPython3JavaC++PythonJavaScriptCC#TypeScriptGoRustPHPSwiftKotlinDartRubyScalaElixirRacketErlangPython MLHTMLBashPandasArrayBinary SearchDivide and ConquerBinary TreeSortingMerge SortTwo PointersMathHeap (Priority Queue)IteratorRecursionBinary Search TreeProbability and StatisticsDynamic ProgrammingBrainteaserOrdered SetLinked ListBit ManipulationQueueStackGreedySimulationHash TableCountingData StreamSliding WindowShortest PathDepth-First SearchQuickselectSuffix ArrayStringCombinatoricsDesignBinary Indexed TreeMatrixString MatchingBrute-Force SearchStrongly Connected ComponentTrieMemoizationInteractiveCounting SortUnion-FindHash FunctionTopological SortBacktrackingNumber TheoryTreeBubble SortYour last submission beat 100% of other submissions' runtime.Share my solutionLeetCode・ Open・Apr 22, 2024Median of Two Sorted ArraysEditorial5831.3M252Sidhant Singh・ Open・Sep 21, 2023✅99%🔥||✅Journey From Brute Force to Most 🔥Optimized ✅Three Approaches||🔥Easy to understandTwo PointersBinary SearchSortingC++2+6K467.1K102niits・ Open・May 07, 2025【Video】Divide each array into two groupsArrayBinary SearchDivide and ConquerC++3+2.2K105.6K8vaishnavi_k15・ Open・18 hours agoEASY SOLUTION 100% BEATS!!!!!!!!!ArrayBinary SearchC++1130coding_simp・ Open・Oct 02, 2022C++ || SOLUTIONArrayCBinary TreeC++791149K35stellari・ Open・Jun 22, 2015Very concise O(log(min(M,N))) iterative solution with detailed explanationBinary Tree2K444.9K218Deep Saini・ Open・Aug 05, 2026Optimal O(log(min(m, n))) Binary Search ApproachC++1700hungry_bits・ Open・Aug 04, 2026⭐⭐[ 100% Beats ] Runtime | Two Pointers +  Binary Search | C++ | Java | Python3 | Easy Explanation Binary SearchDivide and ConquerC++Java1+11750Sounak Ghosh・ Open・Aug 02, 2026Partition-Based Binary Search Approach in C++ArrayBinary SearchDivide and ConquerC++21150Loginov Kirill・ Open・Apr 21, 2025Merging Sorted Arrays for Median – The Cleanest Shortcut You'll SeeArrayBinary SearchDivide and ConquerPython1+15425.9K7Gourab・ Open・Mar 11, 2023✅ best JAVA solution 😎 | beats 100%Java35992.5K34Ayush Bansal・ Open・Jul 17, 2024Easy and Simple C++ approach | Binary search✅ArrayBinary SearchC++19425.1K2vanAmsen・ Open・Sep 21, 2023✅ 94.96% Binary Search & Two PointersTwo PointersBinary SearchPHPC++6+16757.9K15clue・ Open・Jan 08, 2015Intuitive Python O(log (m+n)) solution, by kth smallest in the two sorted arrays, 252msPython676162.9K59Cheng_Zhang・ Open・Nov 02, 2015Concise JAVA solution based on Binary Search544180.1K71Python3Auto24252627282930313233                else:                    return float(max(maxLeftX, maxLeftY))            elif maxLeftX > minRightY:                # We are too far right in partitionX, move left                high = partitionX - 1            else:                # We are too far left in partitionX, move right                low = partitionX + 1                        raise ValueError("Input arrays are not sorted.")SavedLn 33, Col 57AcceptedRuntime: 0 msCase 1Case 2Inputnums1 =[1,3]nums2 =[2]Output2.00000Expected2.00000Contribute a testcaseInput91234›[1,3][2][1,2][3,4]Output912›2.000002.50000Expected912›2.000002.50000 All SubmissionsAccepted2099 / 2099 testcases passedArokiya Nithish Jsubmitted at Aug 06, 2026 16:32AnalysisSolution👑 Unlock the Full LeetCode ExperienceCompany problems, Ask Leet, and expert editorials — all in one plan.Runtime0msBeats100.00%Memory19.54MBBeats41.82%Created with Highcharts 11.1.018.6mb18.8mb19mb19.2mb19.4mb19.6mb0%20%40%
                   
-                Created with Highcharts 11.1.01ms2ms3ms4ms5ms6ms7msCodePython31class Solution:
+                Created with Highcharts 11.1.018.6mb18.8mb19mb19.2mb19.4mb19.6mbCodePython31class Solution:
 2    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
 3        # Ensure nums1 is the smaller array to minimize binary search range
 4        if len(nums1) > len(nums2):
