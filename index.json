@@ -7,5 +7,14 @@
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
     "timestamp": 1786011114533
+  },
+  {
+    "id": "longest-substring-without-repeating-characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Easy",
+    "language": "Java",
+    "platform": "leetcode",
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "timestamp": 1786013280225
   }
 ]
