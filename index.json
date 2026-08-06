@@ -16,5 +16,14 @@
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
     "timestamp": 1786013879042
+  },
+  {
+    "id": "median-of-two-sorted-arrays",
+    "title": "Median Of Two Sorted Arrays",
+    "difficulty": "Easy",
+    "language": "Java",
+    "platform": "leetcode",
+    "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "timestamp": 1786014165240
   }
 ]
