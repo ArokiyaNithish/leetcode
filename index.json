@@ -12,9 +12,9 @@
     "id": "longest-substring-without-repeating-characters",
     "title": "Longest Substring Without Repeating Characters",
     "difficulty": "Easy",
-    "language": "Java",
+    "language": "python",
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
-    "timestamp": 1786013280225
+    "timestamp": 1786013287781
   }
 ]
