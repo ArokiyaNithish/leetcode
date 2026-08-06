@@ -5,7 +5,8 @@
   "hard": 0,
   "languages": {
     "cpp": 1,
-    "python": 2
+    "python": 1,
+    "java": 1
   },
   "platforms": {
     "leetcode": 3
