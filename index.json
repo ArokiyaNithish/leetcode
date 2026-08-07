@@ -25,5 +25,14 @@
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
     "timestamp": 1786024466095
+  },
+  {
+    "id": "smallest-divisible-digit-product-ii",
+    "title": "Smallest Divisible Digit Product Ii",
+    "difficulty": "Easy",
+    "language": "Java",
+    "platform": "leetcode",
+    "url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
+    "timestamp": 1786086012336
   }
 ]
