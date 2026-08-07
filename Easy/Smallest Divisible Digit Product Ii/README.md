@@ -5,7 +5,7 @@
 ## Problem Metadata
 - **Submission Date:** August 7, 2026 at 12:30 PM
 - **Language:** `Java`
-- **Runtime:** !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('lc-theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()Daily QuestionDaily QuestionDebugging...Submit11StreakMiss me yet?00:00:00Arokiya Nithish JAccess all features with our Premium subscription!My ListsNotebookProgressPointsTry New FeaturesOrdersMy PlaygroundsSettingsAppearanceAppearanceSystem DefaultLightDarkSign OutSystem DefaultLightDarkPremiumDescriptionDescriptionEditorialEditorialSolutionsSolutionsSubmissionsSubmissionsCodeCodeTestcaseTestcaseTest ResultTest Result3348. Smallest Divisible Digit Product IIHardTopicsCompaniesHintYou are given a string num which represents a positive integer, and an integer t.
+- **Runtime:** !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('lc-theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()Daily QuestionDaily QuestionPending...Speed UpDebugging...Submit11StreakMiss me yet?00:00:00Arokiya Nithish JAccess all features with our Premium subscription!My ListsNotebookProgressPointsTry New FeaturesOrdersMy PlaygroundsSettingsAppearanceAppearanceSystem DefaultLightDarkSign OutSystem DefaultLightDarkPremiumDescriptionDescriptionJudging...Judging...EditorialEditorialSolutionsSolutionsSubmissionsSubmissionsCodeCodeTestcaseTestcaseTest ResultTest Result3348. Smallest Divisible Digit Product IIHardTopicsCompaniesHintYou are given a string num which represents a positive integer, and an integer t.
 
 A number is called zero-free if none of its digits are 0.
 
@@ -58,9 +58,9 @@ Constraints:
 	1 <= t <= 1014
 
  Seen this question in a real interview before?1/6YesNoAccepted19,643/60.6KAcceptance Rate32.4%TopicsPrincipalMathStringBacktrackingGreedyNumber TheoryBiweekly Contest 143CompaniesHint 1t should only have 2, 3, 5 and 7 as prime factors.Hint 2Find the shortest suffix that must be changed.Hint 3Try to form the string greedily.Similar QuestionsSmallest Number With Given Digit ProductMediumDiscussion (161)Choose a typeComment💡 Discussion Rules1. Please don't post any solutions in this discussion.2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.Sort by:BestRadhaKrishnShiHariVanshNov 09, 20240.1 % acceptence , 4 accepted 4K submission
-I think First time in Leetcode History Read more101Show 5 RepliesReplyPiyush_Negi25Jul 18, 202510.6% acceptance rate?
-Bro, I’ve had better odds texting my crush Read more70ReplyAnmol Khuranaa day agoWhen you realize best approach for this problem is to SKIP IT. Read more43ReplyDepth-Last-SearchNov 09, 2024What a question , even hints are not able to give me hint lol Read more36Show 3 RepliesReplybe_fighterNov 10, 2024Probably tuffest question on leetcode till now !!! Read more23ReplyEdwards_ScottNov 09, 2024Who the hell designed those test cases? TLE Forever.. Read more17ReplyShivam KapdiaDec 08, 2024Each semicolon, a step towards the dark,
-Creator of this question waits with a devil’s mark. Read more26Replyasmitsrivas0Nov 24, 2024After spending 2 to 3 days on it, come up with these testcases after so many wrong submission, try to make your own logic using these testcase the way I did, you will be able to solve this one:
+I think First time in Leetcode History Read more1015Piyush_Negi25Jul 18, 202510.6% acceptance rate?
+Bro, I’ve had better odds texting my crush Read more70Anmol Khuranaa day agoWhen you realize best approach for this problem is to SKIP IT. Read more43Depth-Last-SearchNov 09, 2024What a question , even hints are not able to give me hint lol Read more363be_fighterNov 10, 2024Probably tuffest question on leetcode till now !!! Read more23Edwards_ScottNov 09, 2024Who the hell designed those test cases? TLE Forever.. Read more17Shivam KapdiaDec 08, 2024Each semicolon, a step towards the dark,
+Creator of this question waits with a devil’s mark. Read more26asmitsrivas0Nov 24, 2024After spending 2 to 3 days on it, come up with these testcases after so many wrong submission, try to make your own logic using these testcase the way I did, you will be able to solve this one:
 
 num="10" , t="320"
 num="12", t=1968570"
@@ -71,28 +71,28 @@ num="4121863", t=4741632000
 num="19", t=2
 num="30", t=9
 9)num="9999999999999999999", t=99995938560000
- Read moreTip16Show 3 RepliesReplyczjnbbNov 09, 2024Mark. Hardest up to now, 31 (LCCN and LCUS combined) solved it in BC143. Read more12ReplyMitproAug 06, 2026To all of you guys saying cooked tomorrow, I DO NOT CARE, EVERY BODY KNOWS THIS IS THE POTD TOMORROW, SO DO NOT COMMENT SOME USELESS THINGS Read more11Show 3 RepliesReply12345617Copyright © 2026 LeetCode. All rights reserved.1381616458 OnlinePython3Auto76777879808182838485                    res = num[:i] + str(d) + "1" * (N - 1 - i - len(opt)) + "".join(map(str,                     opt))                    return res                # Step 5: If we cannot form a number of the same length, we increase the length by 1.        opt = get_opt(t)        if opt is not None:            res = "1" * (N + 1 - len(opt)) + "".join(map(str, opt))            return res                    return "-1"SavedLn 85, Col 20AcceptedRuntime: 0 msCase 1Case 2Case 3Inputnum ="1234"t =256Output"1488"Expected"1488"Contribute a testcaseInput9123456›"1234"256"12355"50"11111"26Output9123›"1488""12355""-1"Expected9123›"1488""12355""-1"FindHeaderBarSizeFindTabBarSizeFindBorderBarSize
+ Read moreTip163czjnbbNov 09, 2024Mark. Hardest up to now, 31 (LCCN and LCUS combined) solved it in BC143. Read more12MitproAug 06, 2026To all of you guys saying cooked tomorrow, I DO NOT CARE, EVERY BODY KNOWS THIS IS THE POTD TOMORROW, SO DO NOT COMMENT SOME USELESS THINGS Read more113123417Copyright © 2026 LeetCode. All rights reserved.1381616458 OnlinePython3Auto76777879808182838485                    res = num[:i] + str(d) + "1" * (N - 1 - i - len(opt)) + "".join(map(str,                     opt))                    return res                # Step 5: If we cannot form a number of the same length, we increase the length by 1.        opt = get_opt(t)        if opt is not None:            res = "1" * (N + 1 - len(opt)) + "".join(map(str, opt))            return res                    return "-1"SavedLn 85, Col 20AcceptedRuntime: 0 msCase 1Case 2Case 3Inputnum ="1234"t =256Output"1488"Expected"1488"Contribute a testcaseInput9123456›"1234"256"12355"50"11111"26Output9123›"1488""12355""-1"Expected9123›"1488""12355""-1" All SubmissionsPending...Speed Uppreparing runtime environmentFindHeaderBarSizeFindTabBarSizeFindBorderBarSize
 - **Memory:** N/A
 - **Problem Link:** [Link to Problem](https://leetcode.com/problems/smallest-divisible-digit-product-ii/)
 
 ## Technical Complexity
 - **Time Complexity:** O(N) *(Estimated)*
-- **Space Complexity:** O(1) *(Estimated)*
+- **Space Complexity:** O(N) (Can be optimized to O(1)) *(Estimated)*
 
 ## Implementation Approach
-Iterative linear scan optimization.
+Tabulation (Bottom-Up) Dynamic Programming.
 
 ## Solution Explanation
-The solution processes elements sequentially, applying state updates dynamically to solve the constraint.
+We define sub-problems and store their results in a lookup table (dp array) to avoid recalculating the same sub-problems repeatedly.
 
 ### Alternative Implementation
-A recursive depth-first or division approach could be implemented with recursive memory overhead.
+Memoized Top-Down Recursion (O(N) time, O(N) recursion stack space).
 
 ### Key Interview Takeaways & Notes
-This question tests your mastery of loop bounds, array indexing, and state caching.
+Tests ability to recognize overlapping sub-problems and optimal substructure.
 
 > [!WARNING]
-> **Common Pitfalls:** Handling null or empty inputs, off-by-one index bounds, and overflowing integers.
+> **Common Pitfalls:** Setting up incorrect base cases, or indexing out of bounds on the dp state cache.
 
 ## Flashcards & Active Recall
 - **Q:** What is the optimal time complexity of Smallest Divisible Digit Product Ii?
