@@ -3,7 +3,7 @@
 ![Difficulty: Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat-square) ![Platform: Leetcode](https://img.shields.io/badge/Platform-Leetcode-FFA116?style=flat-square)
 
 ## Problem Metadata
-- **Submission Date:** August 8, 2026 at 12:54 PM
+- **Submission Date:** August 8, 2026 at 12:55 PM
 - **Language:** `Java`
 - **Runtime:** !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('lc-theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()Problem ListProblem ListDebugging...Submit22StreaksReady to Practice?00:00:00Arokiya Nithish JAccess all features with our Premium subscription!My ListsNotebookProgressPointsTry New FeaturesOrdersMy PlaygroundsSettingsAppearanceAppearanceSystem DefaultLightDarkSign OutSystem DefaultLightDarkPremiumDescriptionDescriptionAcceptedAcceptedEditorialEditorialSolutionsSolutionsSubmissionsSubmissionsCodeCodeTestcaseTestcaseTest ResultTest Result5. Longest Palindromic SubstringSolvedMediumTopicsCompaniesHintGiven a string s, return the longest palindromic substring in s.
 
@@ -40,7 +40,7 @@ Is this supposed to happen and I just need to make my code more efficient, or is
 Even if you write a classical DP or memorization solution for this one you will timeout on latest tests.
 I think they consider it edge cases. Because if you add one simple line it will pass! OMG.
 I have leet code for this. Instead of solving problems I spend hours optimizing the constants.
-if s == s[::-1]: return s Read more38Show 5 RepliesReply12345667Copyright © 2026 LeetCode. All rights reserved.33K665444 OnlinePython3Auto21222324252627282930                        # Take the maximum length found for this center            max_len = max(len1, len2)            # If a longer palindrome is found, update the start and end indices            if max_len > end - start:                start = i - (max_len - 1) // 2                end = i + max_len // 2        return s[start:end + 1]SavedUpgrade to Cloud SavingLn 30, Col 32AcceptedRuntime: 0 msCase 1Case 2Inputs ="babad"Output"aba"Expected"bab"Contribute a testcaseInput912›"babad""cbbd"Output912›"aba""bb"Expected912›"bab""bb"FindHeaderBarSizeFindTabBarSizeFindBorderBarSize
+if s == s[::-1]: return s Read more38Show 5 RepliesReply12345667Copyright © 2026 LeetCode. All rights reserved.33K665443 OnlinePython3Auto21222324252627282930                        # Take the maximum length found for this center            max_len = max(len1, len2)            # If a longer palindrome is found, update the start and end indices            if max_len > end - start:                start = i - (max_len - 1) // 2                end = i + max_len // 2        return s[start:end + 1]SavedLn 30, Col 32AcceptedRuntime: 0 msCase 1Case 2Inputs ="babad"Output"aba"Expected"bab"Contribute a testcaseInput912›"babad""cbbd"Output912›"aba""bb"Expected912›"bab""bb"FindHeaderBarSizeFindTabBarSizeFindBorderBarSize
 - **Memory:** N/A
 - **Problem Link:** [Link to Problem](https://leetcode.com/problems/longest-palindromic-substring/)
 
