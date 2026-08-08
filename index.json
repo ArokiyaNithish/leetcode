@@ -34,5 +34,14 @@
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
     "timestamp": 1786086020316
+  },
+  {
+    "id": "longest-palindromic-substring",
+    "title": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "language": "Java",
+    "platform": "leetcode",
+    "url": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "timestamp": 1786173635382
   }
 ]
