@@ -1,8 +1,8 @@
 {
   "totalSolved": 6,
   "easy": 4,
-  "medium": 1,
-  "hard": 1,
+  "medium": 2,
+  "hard": 0,
   "languages": {
     "cpp": 1,
     "python": 1,
