@@ -3,7 +3,7 @@
 ![Difficulty: Hard](https://img.shields.io/badge/Difficulty-Hard-red?style=flat-square) ![Platform: Leetcode](https://img.shields.io/badge/Platform-Leetcode-FFA116?style=flat-square)
 
 ## Problem Metadata
-- **Submission Date:** August 17, 2026 at 05:44 AM
+- **Submission Date:** August 17, 2026 at 05:45 AM
 - **Language:** `Java`
 - **Runtime:** !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('lc-theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()Daily QuestionDaily QuestionDebugging...Submit11StreakSame time tomorrow? 👀00:00:00Arokiya Nithish JAccess all features with our Premium subscription!My ListsNotebookProgressPointsTry New FeaturesOrdersMy PlaygroundsSettingsAppearanceAppearanceSystem DefaultLightDarkSign OutSystem DefaultLightDarkPremiumDescriptionDescriptionAcceptedAcceptedEditorialEditorialSolutionsSolutionsSubmissionsSubmissionsCodeCodeTestcaseTestcaseTest ResultTest Result1563. Stone Game VSolvedHardTopicsCompaniesHintThere are several stones arranged in a row, and each stone has an associated value which is an integer given in the array stoneValue.
 
@@ -52,7 +52,7 @@ Pick [2,4,6] vs [3,5,5] -> Bob throws away right, Alice scores  = 2 + 4 + 6 = 12
 Pick [2,4] vs [6] -> Bob lets Alice pick since they're equal so Alices throws away [6]. Alice score = 12 + 2 + 4 = 18
 Pick [2] vs [4] -> Bob throws away right. Alice score = 18 + 2 = 20
 Game Over
- Read more8Show 2 RepliesReply12345Copyright © 2026 LeetCode. All rights reserved.71544388 OnlinePython3Auto49505152535455565758                    if m < j:                        res = max(res, max_r[m + 1][j])                                        dp[i][j] = res                                # Update the auxiliary arrays for future queries                max_l[i][j] = max(max_l[i][j - 1], total_sum + dp[i][j])                max_r[i][j] = max(max_r[i + 1][j], total_sum + dp[i][j])                        return dp[0][n - 1]SavedUpgrade to Cloud SavingLn 58, Col 28AcceptedRuntime: 0 msCase 1Case 2Case 3InputstoneValue =[6,2,3,4,5,5]Output18Expected18Contribute a testcaseInput9123›[6,2,3,4,5,5][7,7,7,7,7,7,7][4]Output9123›18280Expected9123›18280FindHeaderBarSizeFindTabBarSizeFindBorderBarSize
+ Read more8Show 2 RepliesReply12345Copyright © 2026 LeetCode. All rights reserved.71544405 OnlinePython3Auto49505152535455565758                    if m < j:                        res = max(res, max_r[m + 1][j])                                        dp[i][j] = res                                # Update the auxiliary arrays for future queries                max_l[i][j] = max(max_l[i][j - 1], total_sum + dp[i][j])                max_r[i][j] = max(max_r[i + 1][j], total_sum + dp[i][j])                        return dp[0][n - 1]SavedLn 58, Col 28AcceptedRuntime: 0 msCase 1Case 2Case 3InputstoneValue =[6,2,3,4,5,5]Output18Expected18Contribute a testcaseInput9123›[6,2,3,4,5,5][7,7,7,7,7,7,7][4]Output9123›18280Expected9123›18280FindHeaderBarSizeFindTabBarSizeFindBorderBarSize
 - **Memory:** N/A
 - **Problem Link:** [Link to Problem](https://leetcode.com/problems/stone-game-v/)
 
