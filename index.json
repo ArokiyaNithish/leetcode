@@ -47,10 +47,10 @@
   {
     "id": "stone-game-v",
     "title": "Stone Game V",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "language": "Java",
     "platform": "leetcode",
-    "url": "https://leetcode.com/problems/stone-game-v/?envType=daily-question&envId=2026-08-17",
-    "timestamp": 1786925610768
+    "url": "https://leetcode.com/problems/stone-game-v/",
+    "timestamp": 1786925625240
   }
 ]
