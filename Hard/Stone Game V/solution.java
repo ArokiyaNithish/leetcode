@@ -1,43 +1,58 @@
 from typing import List
-from functools import lru_cache
 
 class Solution:
     def stoneGameV(self, stoneValue: List[int]) -> int:
         n = len(stoneValue)
         
-        # Precompute prefix sums to query subarray sums in O(1) time
-        # prefix[i] will store the sum of stoneValue[0...i-1]
+        # prefix[i] stores sum of stoneValue[0...i-1]
         prefix = [0] * (n + 1)
         for i in range(n):
-            prefix[i+1] = prefix[i] + stoneValue[i]
+            prefix[i + 1] = prefix[i] + stoneValue[i]
             
-        @lru_cache(None)
-        def dp(i: int, j: int) -> int:
-            # Base case: only one stone left, game ends, score is 0
-            if i == j:
-                return 0
+        # dp[i][j] stores the max score for subarray i...j
+        dp = [[0] * n for _ in range(n)]
+        
+        # max_l[i][j] stores max(sum(i, k) + dp[i][k]) for k in range i...j
+        max_l = [[0] * n for _ in range(n)]
+        
+        # max_r[i][j] stores max(sum(k, j) + dp[k][j]) for k in range i...j
+        max_r = [[0] * n for _ in range(n)]
+        
+        # Base cases initialization
+        for i in range(n):
+            max_l[i][i] = stoneValue[i]
+            max_r[i][i] = stoneValue[i]
             
-            max_score = 0
+        # Bottom-up DP: iterate starting points backwards, and end points forwards
+        for i in range(n - 2, -1, -1):
+            m = i  # sliding split pointer
             
-            # Try splitting the row at every possible index k
-            for k in range(i, j):
-                # Calculate sums using the prefix sum array
-                left_sum = prefix[k+1] - prefix[i]
-                right_sum = prefix[j+1] - prefix[k+1]
+            for j in range(i + 1, n):
+                total_sum = prefix[j + 1] - prefix[i]
                 
-                # Bob throws away the right row
-                if left_sum < right_sum:
-                    max_score = max(max_score, left_sum + dp(i, k))
+                # Advance m as long as the left half is strictly less than the right half
+                # (i.e., left_sum * 2 < total_sum)
+                while m < j and (prefix[m + 1] - prefix[i]) * 2 < total_sum:
+                    m += 1
                 
-                # Bob throws away the left row
-                elif left_sum > right_sum:
-                    max_score = max(max_score, right_sum + dp(k+1, j))
+                res = 0
                 
-                # Values are equal, Alice decides which row to throw away
+                # If we found an exact equilibrium where left_sum == right_sum
+                if (prefix[m + 1] - prefix[i]) * 2 == total_sum:
+                    # Alice gets to choose the absolute best option from either the left or the right side
+                    res = max(max_l[i][m], max_r[m + 1][j])
                 else:
-                    max_score = max(max_score, left_sum + max(dp(i, k), dp(k+1, j)))
-                    
-            return max_score
-
-        # Start the game with the full array of stones
-        return dp(0, n - 1)
+                    # For all split points < m, Bob throws away the right row (we keep left)
+                    if m > i:
+                        res = max(res, max_l[i][m - 1])
+                    # For all split points >= m, Bob throws away the left row (we keep right)
+                    if m < j:
+                        res = max(res, max_r[m + 1][j])
+                        
+                dp[i][j] = res
+                
+                # Update the auxiliary arrays for future queries
+                max_l[i][j] = max(max_l[i][j - 1], total_sum + dp[i][j])
+                max_r[i][j] = max(max_r[i + 1][j], total_sum + dp[i][j])
+                
+        return dp[0][n - 1]
