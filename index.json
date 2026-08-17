@@ -43,5 +43,14 @@
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/longest-palindromic-substring/",
     "timestamp": 1786174237558
+  },
+  {
+    "id": "stone-game-v",
+    "title": "Stone Game V",
+    "difficulty": "Hard",
+    "language": "Java",
+    "platform": "leetcode",
+    "url": "https://leetcode.com/problems/stone-game-v/",
+    "timestamp": 1786925422824
   }
 ]
