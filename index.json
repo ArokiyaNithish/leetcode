@@ -61,5 +61,14 @@
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/",
     "timestamp": 1787014341490
+  },
+  {
+    "id": "stone-game-viii",
+    "title": "Stone Game Viii",
+    "difficulty": "Hard",
+    "language": "Java",
+    "platform": "leetcode",
+    "url": "https://leetcode.com/problems/stone-game-viii/",
+    "timestamp": 1787533135918
   }
 ]
