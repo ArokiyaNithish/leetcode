@@ -73,11 +73,11 @@
   },
   {
     "id": "smallest-missing-multiple-of-k",
-    "title": "Smallest Missing Multiple Of K",
-    "difficulty": "Easy",
+    "title": "Smallest Missing Multiple of K",
+    "difficulty": "Medium",
     "language": "Java",
     "platform": "leetcode",
-    "url": "https://leetcode.com/problems/smallest-missing-multiple-of-k/",
-    "timestamp": 1787620485534
+    "url": "https://leetcode.com/problems/smallest-missing-multiple-of-k/?envType=daily-question&envId=2026-08-25",
+    "timestamp": 1787620503904
   }
 ]
