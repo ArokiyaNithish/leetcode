@@ -70,5 +70,14 @@
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/stone-game-viii/",
     "timestamp": 1787533220067
+  },
+  {
+    "id": "smallest-missing-multiple-of-k",
+    "title": "Smallest Missing Multiple Of K",
+    "difficulty": "Easy",
+    "language": "python3",
+    "platform": "leetcode",
+    "url": "https://leetcode.com/problems/smallest-missing-multiple-of-k/",
+    "timestamp": 1787620359896
   }
 ]
