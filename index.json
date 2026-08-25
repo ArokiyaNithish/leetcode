@@ -75,9 +75,9 @@
     "id": "smallest-missing-multiple-of-k",
     "title": "Smallest Missing Multiple Of K",
     "difficulty": "Easy",
-    "language": "python3",
+    "language": "Java",
     "platform": "leetcode",
     "url": "https://leetcode.com/problems/smallest-missing-multiple-of-k/",
-    "timestamp": 1787620359896
+    "timestamp": 1787620445062
   }
 ]
