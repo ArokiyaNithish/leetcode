@@ -62,7 +62,7 @@ Edge Case: If all multiples in the given range exist, return the next multiple a
 
  Read more3ReplyShreyank001an hour agosolution from my side: simple C++, hash-set, O(n);
 https://leetcode.com/problems/smallest-missing-multiple-of-k/solutions/8480874/easy-c-find-the-smallest-missing-multipl-gkio Read more2ReplyNIKHIL_RAJPUT_01Oct 19, 2025sort the array then check for each index  for multiple of k . starts from k Read moreTip4Show 2 RepliesReplyanoob375 minutes agowhen they want to hire you Read more1ReplyChidipothu Jaswin36 minutes agoTip: The input may contain Duplicate Values. Be careful. Read more1ReplyMarco Lin Yian hour agoAre we sure Alice and Bob are completely gone? Read more1Show 1 RepliesReplyKuldeepan hour agoOne of my most favourite things is to
-"Just hash it!" :) Read more1Reply123Copyright © 2026 LeetCode. All rights reserved.7928943 OnlineSmallest Missing Multiple of KSmallest Missing Multiple of KLeetCode1790Aug 19, 2026EditorialApproach: Enumeration + Hash Table
+"Just hash it!" :) Read more1Reply123Copyright © 2026 LeetCode. All rights reserved.8028947 OnlineSmallest Missing Multiple of KSmallest Missing Multiple of KLeetCode1790Aug 19, 2026EditorialApproach: Enumeration + Hash Table
 Intuition
 We need to find the smallest positive integer that is a multiple of k and does not appear in the array nums.
 First, we put all elements of nums into a hash set seen to support O(1) average-time lookups. Then, starting from k, we enumerate its positive multiples k,2k,3k,… until we find the first multiple that does not appear in seen. This value is the answer.
@@ -92,7 +92,7 @@ The hash set stores at most n distinct elements.
     int z = ++b[0] == 0; b[1]++;
     return (z * 64 + bit_width(b[z] & -b[z])) * k;
 }
- Read more2MariaAug 24, 2026One line solution for this task Read more1122Python3Auto12345678910class Solution:    def missingMultiple(self, nums: list[int], k: int) -> int:        num_set = set(nums)                multiple = k                while multiple in num_set:            multiple += k                    return multipleSavedLn 10, Col 24AcceptedRuntime: 0 msCase 1Case 2Inputnums =[8,2,3,4,6]k =2Output10Expected10Contribute a testcaseInput91234›[8,2,3,4,6]2[1,4,7,10,15]5Output912›105Expected912›105FindHeaderBarSizeFindTabBarSizeFindBorderBarSize
+ Read more2MariaAug 24, 2026One line solution for this task Read more1122Python3Auto12345678910class Solution:    def missingMultiple(self, nums: list[int], k: int) -> int:        num_set = set(nums)                multiple = k                while multiple in num_set:            multiple += k                    return multipleSavedUpgrade to Cloud SavingLn 10, Col 24AcceptedRuntime: 0 msCase 1Case 2Inputnums =[8,2,3,4,6]k =2Output10Expected10Contribute a testcaseInput91234›[8,2,3,4,6]2[1,4,7,10,15]5Output912›105Expected912›105FindHeaderBarSizeFindTabBarSizeFindBorderBarSize
 - **Memory:** N/A
 - **Problem Link:** [Link to Problem](https://leetcode.com/problems/smallest-missing-multiple-of-k/)
 
