@@ -6,8 +6,7 @@
   "languages": {
     "cpp": 1,
     "python": 1,
-    "java": 6,
-    "python3": 1
+    "java": 7
   },
   "platforms": {
     "leetcode": 9
