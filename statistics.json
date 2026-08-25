@@ -1,14 +1,15 @@
 {
-  "totalSolved": 8,
-  "easy": 5,
+  "totalSolved": 9,
+  "easy": 6,
   "medium": 1,
   "hard": 2,
   "languages": {
     "cpp": 1,
     "python": 1,
-    "java": 6
+    "java": 6,
+    "python3": 1
   },
   "platforms": {
-    "leetcode": 8
+    "leetcode": 9
   }
 }
